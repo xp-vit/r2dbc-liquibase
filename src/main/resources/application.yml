@@ -1,0 +1,8 @@
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://localhost/test
+    username: postgres
+    initialization-mode: always
+  liquibase:
+    url: jdbc:postgresql://localhost/test
+    user: postgres

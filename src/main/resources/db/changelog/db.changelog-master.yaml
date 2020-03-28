@@ -1,0 +1,15 @@
+databaseChangeLog:
+  - changeSet:
+      id: create all initial tables
+      author: xp-vit
+      changes:
+        - createTable:
+            tableName: test
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
